@@ -221,12 +221,12 @@ pipeline {
           }
       }
     }
-  }
-  stage('Slack Demo') {
-      steps {
-        script {
-          echo "This is for a slack message demo"
-        }
+    stage('Slack Demo') {
+        steps {
+          script {
+            echo "This is for a slack message demo"
+          }
+      }
     }
   }
    post {
