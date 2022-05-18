@@ -233,19 +233,19 @@ pipeline {
         fixed {
             script {
                     // Specify your project channel here. Feel free to add/remove states that are relevant to your project (i.e. fixed, failure,...)
-                    slackSend channel: "@jessi_jassal", color: "##77caed", message: "Build Fixed: ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+                    slackSend channel: "@U01Q99161G9", color: "##77caed", message: "Build Fixed: ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
             }
         }
         failure {
             script {
                     // Specify your project channel here. Feel free to add/remove states that are relevant to your project (i.e. fixed, failure,...)
-                    slackSend channel: "@jessi_jassal", color: "danger", message: "Build Failed: ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+                    slackSend channel: "@U01Q99161G9", color: "danger", message: "Build Failed: ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
             }
         }
         success {
             script {
                     // Specify your project channel here. Feel free to add/remove states that are relevant to your project (i.e. fixed, failure,...)
-                    slackSend channel: "@jessi_jassal", color: "good", message: "Build Succeeded: ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
+                    slackSend channel: "@U01Q99161G9", color: "good", message: "Build Succeeded: ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
             }
         }
     }
